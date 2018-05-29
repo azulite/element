@@ -47,12 +47,11 @@
       },
       handleItemClick(item) {
         if (this.accordion) {
-          // this.setActiveNames(
-          //   (this.activeNames[0] || this.activeNames[0] === 0) &&
-          //   this.activeNames[0] === item.name
-          //     ? '' : item.name
-          // );
-          return false
+          this.setActiveNames(
+            (this.activeNames[0] || this.activeNames[0] === 0) &&
+            this.activeNames[0] === item.name
+              ? '' : item.name
+          );
         } else {
           let activeNames = this.activeNames.slice(0);
           let index = activeNames.indexOf(item.name);

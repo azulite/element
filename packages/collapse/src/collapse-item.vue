@@ -101,14 +101,12 @@
         }, 50);
       },
       handleHeaderClick() {
-        // this.dispatch('ElCollapse', 'item-click', this);
-        // this.focusing = false;
-        // this.isClick = true;
-        return false
+        this.dispatch('ElCollapse', 'item-click', this);
+        this.focusing = false;
+        this.isClick = true;
       },
       handleEnterClick() {
-        // this.dispatch('ElCollapse', 'item-click', this);
-        return false
+        this.dispatch('ElCollapse', 'item-click', this);
       }
     }
   };
